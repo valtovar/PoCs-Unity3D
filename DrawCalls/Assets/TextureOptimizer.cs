@@ -7,7 +7,6 @@ public class TextureOptimizer : MonoBehaviour
 	public List<GameObject> gameObjects;
 	public Material refMaterial;
 
-	// Use this for initialization
 	void Start () 
 	{
 		Material newMat = new Material (refMaterial);
@@ -33,10 +32,5 @@ public class TextureOptimizer : MonoBehaviour
 
 			gameObjects[i].GetComponent<MeshFilter>().mesh.uv = uvb;
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
